@@ -4,13 +4,4 @@
     <LinkTo @route="about" class="button">About Us</LinkTo>
 </Jumbo>
 
-<div class="rentals">
-    <ul class="results">
-        {{!-- <li><Rental @rental={{@model}} /></li> --}}
-        {{!-- <li><Rental @rental={{@model}} /></li> --}}
-        {{!-- <li><Rental @rental={{@model}} /></li> --}}
-        {{#each @model as |rental|}}
-            <li><Rental @rental={{rental}} /></li>
-        {{/each}}
-    </ul>
-</div>
+<Rentals @rentals={{@model}} />
